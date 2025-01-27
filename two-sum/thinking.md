@@ -142,4 +142,9 @@ This would actually be such a fun like intro shader programming task I should so
 2. C++ solution without any parallelisation
 3. Like some CUDA shader implementation or sth that I won't be able to run cuz I don't have a gpu lol
 
+## A couple days later
 
+Today (next train trip lol) implemented the rust version which was accepted by leetcode no real shock there.
+Might have a stab now at the C++ versions. Will experiment also I think with a parameterised CMake build that optionally uses the OpenGL solution or doesn't depending maybe on like a flag when cmake is invoked.
+
+Also worth noting that the rust definitely felt unnatural - need to practice it a bit more with a couple more problems I think before I should feel happy to try out another language.
