@@ -148,3 +148,8 @@ Today (next train trip lol) implemented the rust version which was accepted by l
 Might have a stab now at the C++ versions. Will experiment also I think with a parameterised CMake build that optionally uses the OpenGL solution or doesn't depending maybe on like a flag when cmake is invoked.
 
 Also worth noting that the rust definitely felt unnatural - need to practice it a bit more with a couple more problems I think before I should feel happy to try out another language.
+
+C++ implementation will take me a bit longer to type out just because I'm looking at making it a slightly more functional application.
+Might also look into using either some scripting language or sth to generate the test cases (fuzzy testing? ofc not really any point doing that here since this is essentially a unit test but an interesting idea to try to use)
+
+Main file written out but will have to wrestle firstly with CMake and then ofc with the actual substance of the project - building the binary tree by hand and then the GPU app also.
