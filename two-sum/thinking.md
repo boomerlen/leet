@@ -153,3 +153,5 @@ C++ implementation will take me a bit longer to type out just because I'm lookin
 Might also look into using either some scripting language or sth to generate the test cases (fuzzy testing? ofc not really any point doing that here since this is essentially a unit test but an interesting idea to try to use)
 
 Main file written out but will have to wrestle firstly with CMake and then ofc with the actual substance of the project - building the binary tree by hand and then the GPU app also.
+
+Worth also mentioning explicitly that I've chosen to basically write out a simple testing interface myself rather than use the built in unit tests that I used to test the rust program. If I wanted to do a real speed comparison with the rust program I would probabyl also have to change the rust interface to at least use a parameterised input structure also but this would be way simpler since I would get the csv parsing basically for free since cargo is so nice to use lol.
