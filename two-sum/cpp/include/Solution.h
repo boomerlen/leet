@@ -11,10 +11,10 @@
 
 class TwoSumRunner {
 public:
-    TwoSumRunner();
-    virtual ~TwoSumRunner() = 0;
+    inline TwoSumRunner() {}
+    virtual ~TwoSumRunner() {}
     
-    std::pair<int, int> run(const std::vector<int> &nums, int target);
+    virtual std::pair<int, int> run(const std::vector<int> &nums, int target) = 0;
 };
 
 class TwoSumNative : public TwoSumRunner {

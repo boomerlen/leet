@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <vector>
 
 // Preprocessor inherits ideally from CMakeLists.txt
 
