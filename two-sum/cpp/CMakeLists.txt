@@ -38,7 +38,11 @@ add_compile_definitions(CSV_BUFLEN ${CSV_BUFLEN})
 option(RUNNER_GPU "Whether to use GPU accelerated operation" OFF)
 if(${RUNNER_GPU})
     add_compile_definitions(RUNNER_GPU)
+    target_sources(app src/TwoSumAccelerated.cpp)
+else()
+    target_sources(app src/TwoSumNative.cpp src/Tree.cpp)
 endif()
+
 
 include_directories(app include)
 

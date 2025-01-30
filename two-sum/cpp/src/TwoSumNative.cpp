@@ -5,6 +5,7 @@
 // HS 29.1.25
 
 #include "Solution.h"
+#include "Tree.h"
 
 #include <utility>
 
