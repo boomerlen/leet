@@ -5,6 +5,8 @@ project(TwoSumCPP VERSION 0.1)
 set(CMAKE_CXX_STASNDARD 23)
 set(CMAKE_CXX_STASNDARD_REQUIRED True)
 
+cmake_policy(SET CMP0076 NEW)
+
 # Create compile_commands.json for better IDE support
 # https://stackoverflow.com/questions/59263015/cmake-how-to-change-compile-commands-json-output-location
 set(CMAKE_EXPORT_COMPILE_COMMANDS True)
@@ -38,9 +40,9 @@ add_compile_definitions(CSV_BUFLEN ${CSV_BUFLEN})
 option(RUNNER_GPU "Whether to use GPU accelerated operation" OFF)
 if(${RUNNER_GPU})
     add_compile_definitions(RUNNER_GPU)
-    target_sources(app src/TwoSumAccelerated.cpp)
+    target_sources(app PUBLIC src/TwoSumAccelerated.cpp)
 else()
-    target_sources(app src/TwoSumNative.cpp src/Tree.cpp)
+    target_sources(app PUBLIC src/TwoSumNative.cpp src/Tree.cpp)
 endif()
 
 
