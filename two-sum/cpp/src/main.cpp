@@ -24,7 +24,7 @@
 #define PAIR_CMP(x, y) ((x.first == y.first && x.second == y.second) || (x.second == y.first && x.first == y.second))
 
 int main(int argc, char **argv) {
-    
+
     // Assume test cases provided in csv given
     if (argc != 2) {
         std::cout << "Please provide one argument with the input test files" << std::endl;
