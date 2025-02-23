@@ -2,5 +2,5 @@
 
 mkdir build
 cd build
-cmake .. -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=.. -G Ninja
+cmake .. -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=.. -G Ninja "$@"
 ninja

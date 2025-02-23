@@ -20,8 +20,6 @@ endif()
 
 add_executable(app
     src/main.cpp
-    src/TwoSumAccelerated.cpp
-    src/TwoSumNative.cpp
 )
 
 # Options
@@ -39,8 +37,11 @@ add_compile_definitions(CSV_BUFLEN ${CSV_BUFLEN})
 
 option(RUNNER_GPU "Whether to use GPU accelerated operation" OFF)
 if(${RUNNER_GPU})
+    # OpenGL stuff
     add_compile_definitions(RUNNER_GPU)
     target_sources(app PUBLIC src/TwoSumAccelerated.cpp)
+
+    include(FindOpenGL)
 else()
     target_sources(app PUBLIC src/TwoSumNative.cpp src/Tree.cpp)
 endif()
